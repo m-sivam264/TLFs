@@ -1,0 +1,34 @@
+                          Output ID: PRA-STD-T-016-ADSL-001 Output Name: AE by SOC/PT/Severity
+     Table 14.3.2.4 [Treatment-Emergent] Adverse Events by System Organ Class, Preferred Term, and Maximum Severity
+                                                      (Safety Set)
+
+                        System Organ Class          Maximum   Trt A       Trt B       Total
+                        Preferred Term [n (%)]      Severity  (N=2)       (N=2)       (N=4)
+                        ------------------------------------------------------------------------
+
+                        Any Adverse Events          Severe    0           1 (50.0)    1 (25.0)  
+                                                    Mild      2 (100.0)   2 (100.0)   4 (100.0) 
+                                                    Moderate  2 (100.0)   0           2 (50.0)  
+                                                    [Fatal]   0           0           0         
+                        Gastrointestinal Disorders  Moderate  1 (50.0)    0           1 (25.0)  
+                                                                                                
+                                                    Mild      2 (100.0)   1 (50.0)    3 (75.0)  
+                                                    Severe    0           0           0         
+                              Diarrhoea             Mild      1 (50.0)    0           1 (25.0)  
+                                                    Moderate  0           0           0         
+                                                    Severe    0           0           0         
+                                                                                                
+                              Nausea                Mild      1 (50.0)    1 (50.0)    2 (50.0)  
+                                                    Moderate  1 (50.0)    0           1 (25.0)  
+                                                    Severe    0           0           0         
+                        Nervous System Disorders    Mild      0           1 (50.0)    1 (25.0)  
+                                                    Moderate  1 (50.0)    0           1 (25.0)  
+                                                                                                
+                                                    Severe    0           1 (50.0)    1 (25.0)  
+                              Dizziness             Mild      0           1 (50.0)    1 (25.0)  
+                                                    Moderate  0           0           0         
+                                                    Severe    0           0           0         
+                              Headache              Mild      0           0           0         
+                                                                                                
+                                                    Moderate  1 (50.0)    0           1 (25.0)  
+                                                    Severe    0           1 (50.0)    1 (25.0)

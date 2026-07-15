@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-15T15:36:00Z",
+  "_captured_run_id": "r_f26f4359aa8246e3a4112eee94fa214a",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote ads (12 rows, 8 columns).",
+    "NOTE: Wrote table (21 rows, 5 columns).",
+    "NOTE: PROC REPORT output 21 observations with 4 variables."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_listing_demographics_fas",
+  "source_file": "Listing task 1.sas",
+  "source_blob_sha": "25ce1ad0b5bfa106e03572451b6a3be4c2e85969",
+  "source_commit": "7026d6789e39b2a7f62e497f5b0b394b0a350092",
+  "notes": "Full Analysis Set demographic baseline listing (race recode, catx composed Subject ID/Age/Race/Sex key, e8601da10 birthdate, weight/height/BMI derivations, PROC REPORT with compute before/after _page_). Substitution: the external `adam` libname read (adsl_sm_mock, FASFL='Y' subset) is replaced by an 8-row in-WORK mock ADSL with the columns the listing consumes; the hardcoded D:\\...\\*.rtf ODS path is rewritten to a relative ./ path. The two LISTING-destination sizing options on the PROC REPORT statement (ls=100 ps=60) were dropped so the run is self-contained; they do not affect the RTF output. All report logic and column definitions are the author's, unchanged."
+}
