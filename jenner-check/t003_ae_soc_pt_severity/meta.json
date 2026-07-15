@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_ae_soc_pt_severity",
+  "source_file": "Table_14.3.2.4_TRTEMFL_AE_BySOC_PT_Severity.sas",
+  "source_blob_sha": "10ff827f79ffff9a97d215622d92b994296f132c",
+  "source_commit": "7026d6789e39b2a7f62e497f5b0b394b0a350092",
+  "notes": "Treatment-emergent AE table by System Organ Class / Preferred Term / Maximum Severity (Table 14.3.2.4, Safety Set). Exercises multi-way PROC FREQ (Any/SOC/PT levels of trt01a*aesoc*aedecod*aesev), a cartesian PROC SQL join against a severity skeleton to force all severity terms, propcase label building, first.-dot BY processing for the maximum-severity pick, PROC TRANSPOSE id trt01a, and a PROC REPORT with an nowd column-nest layout and compute-after footnote. Substitution: the external `adam` libname is repointed to a bundle-relative './lib' dir holding a 4-row mock ADSL and a 7-row mock ADAE (arms TTA/TTB -> tta/ttb report columns), so the program's own `proc datasets lib=work kill;` cannot wipe them; the hardcoded D:\\...\\*.rtf ODS path is rewritten to relative ./. Two mechanical adjustments preserve output: the three global TITLE statements were relocated from inside the PROC REPORT body to just before it (global titles render identically either way), and a `proc sort ... by trt01a` was added before the arm_counts/for_n MERGE BY (required for a SAS merge). All counting, severity-expansion, and report logic are the author's, unchanged."
+}

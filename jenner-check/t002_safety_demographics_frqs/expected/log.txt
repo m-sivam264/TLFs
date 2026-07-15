@@ -1,0 +1,206 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library ADAM2 assigned path=./lib.
+NOTE: DATA adam2.adsl
+
+NOTE: Processing inline DATALINES (6 lines)
+
+NOTE: Read 6 rows from DATALINES.
+NOTE: Wrote adam2.adsl (6 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC DATASETS library=WORK
+
+NOTE: 
+                       Directory
+
+       Libref             WORK
+       Engine             AVRO
+       Physical Name      /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/work/0ff46127-2e1b-4032-b763-c53c6556db40
+
+       (no members)
+
+NOTE: NOTE: KILL option deleted 0 member(s) from library WORK.
+NOTE: PROC SORT data=adam2.adsl
+
+NOTE: Read 6 rows from adam2.adsl.
+NOTE: Wrote adsl (6 rows, 8 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA ads
+
+
+NOTE: Read 6 rows from adsl.
+NOTE: Wrote ads (12 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable N1 = 3
+NOTE: Macro variable N2 = 3
+NOTE: Macro variable N3 = 6
+NOTE: PROC SQL statement used.
+3 3 6
+NOTE: PROC FREQ
+NOTE: Output dataset se has 6 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SORT data=se
+
+NOTE: Read 6 rows from se.
+NOTE: Wrote se (6 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=se
+
+NOTE: Created 2 rows.
+NOTE: Output written to /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/work/0ff46127-2e1b-4032-b763-c53c6556db40/se1.avro.
+NOTE: PROC FREQ
+NOTE: Output dataset RC has 6 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SORT data=RC
+
+NOTE: Read 6 rows from RC.
+NOTE: Wrote RC (6 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=RC
+
+NOTE: Created 2 rows.
+NOTE: Output written to /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/work/0ff46127-2e1b-4032-b763-c53c6556db40/rc1.avro.
+NOTE: PROC FREQ
+NOTE: Output dataset ET has 6 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SORT data=ET
+
+NOTE: Read 6 rows from ET.
+NOTE: Wrote ET (6 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=ET
+
+NOTE: Created 2 rows.
+NOTE: Output written to /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/work/0ff46127-2e1b-4032-b763-c53c6556db40/et1.avro.
+NOTE: DATA all
+
+
+NOTE: Read 2 rows from se1.
+NOTE: Read 4 rows from rc1.
+NOTE: Read 6 rows from et1.
+NOTE: Wrote all (6 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dummy
+
+
+NOTE: Wrote dummy (4 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA all2
+
+
+NOTE: Read 6 rows from all.
+NOTE: Read 10 rows from dummy.
+NOTE: Wrote all2 (10 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dumm2
+
+
+NOTE: Wrote dumm2 (4 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA all3
+
+
+NOTE: Read 4 rows from dumm2.
+NOTE: Read 14 rows from all2.
+NOTE: Wrote all3 (14 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: Output dataset age_st has 4 observations and 9 variables.
+NOTE: PROC MEANS statement used.
+NOTE: DATA ag
+
+
+NOTE: Read 3 rows from age_st.
+NOTE: Wrote ag (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC TRANSPOSE data=ag
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/work/0ff46127-2e1b-4032-b763-c53c6556db40/age_trns.avro.
+NOTE: DATA age
+
+
+NOTE: Read 4 rows from age_trns.
+NOTE: Wrote age (4 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA space
+
+
+NOTE: Wrote space (3 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA all4
+
+
+NOTE: Read 14 rows from all3.
+NOTE: Read 18 rows from age.
+NOTE: Read 21 rows from space.
+NOTE: Wrote all4 (21 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=all4
+
+NOTE: Read 21 rows from all4.
+NOTE: Wrote table (21 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: Option ORIENTATION changed to PROTRAIT.
+NOTE: Option TITLE changed to Bigg Pharmaceutical Company Date: ddMONyyyy.
+NOTE: Option TITLE2 changed to BP3304-002 Program xxxxxxxx.SAS.
+NOTE: Option TITLE3 changed to Page X of Y.
+NOTE: Option TITLE4 changed to 14.1.2.1  Subject Demographics and Baseline Characteristics.
+NOTE: Option TITLE5 changed to Safety Population.
+NOTE: Option FOOTNOTE1 changed to Reference: Listing 16.2.4.1.
+NOTE: Option FOOTNOTE2 changed to Percentages are based on the number of subjects in the population..
+NOTE: Option FOOTNOTE3 changed to Note:  SD = standard deviation, Min = Minimum, Max = Maximum..
+NOTE: PROC REPORT data=table
+
+NOTE: PROC REPORT output 21 observations with 4 variables.
+
+NOTE: Read 21 rows from table.
+NOTE: Wrote (console) (21 rows, 4 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: ODS RTF: wrote report to /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/demographics_safety.rtf.
+NOTE: Option ORIENTATION changed to LANDSCAPE.
+NOTE: Option TITLE changed to Bigg Pharmaceutical Company Date: ddMONyyyy.
+NOTE: Option TITLE2 changed to BP3304-002 Program xxxxxxxx.SAS.
+NOTE: Option TITLE3 changed to Page X of Y.
+NOTE: Option TITLE4 changed to 14.1.2.1  Subject Demographics and Baseline Characteristics.
+NOTE: Option TITLE5 changed to Safety Population.
+NOTE: PROC REPORT data=table
+
+NOTE: PROC REPORT output 21 observations with 5 variables.
+
+NOTE: Read 21 rows from table.
+NOTE: Wrote (console) (21 rows, 5 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option FOOTNOTE1 changed to          Reference: Listing 16.2.4.1.
+NOTE: Option FOOTNOTE2 changed to          Note: SD = standard deviation, Min = Minimum, Max = Maximum..
+NOTE: Option FOOTNOTE3 changed to          Percentages are based on the number of subjects in the population..
+NOTE: ODS RTF: wrote report to /tmp/work/r_f26f4359aa8246e3a4112eee94fa214a/14_1_2_1_Demographics.rtf.

@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_safety_demographics_frqs",
+  "source_file": "Safety Popolation - demographics.sas",
+  "source_blob_sha": "ac02f8324495c1a700bc2886aad8ae6aa88713f9",
+  "source_commit": "7026d6789e39b2a7f62e497f5b0b394b0a350092",
+  "notes": "Safety Population demographics/baseline table (14.1.2.1). Exercises the author's reusable %frqs macro (PROC FREQ TRT01AN*var -> PROC SORT -> PROC TRANSPOSE id TRT01AN) called for SEX/RACE/ETHNIC, the OVERALL arm doubling via double OUTPUT, N counts into macro vars via PROC SQL, PROC MEANS age statistics, and two PROC REPORT tables (one with a compute block bolding section headers). Substitution: the external `adam2` libname is repointed to a bundle-relative './lib' directory holding a 6-row mock ADSL (TRT01AN 1=100 MG BP3304, 0=PLACEBO) so the program's own `proc datasets lib=work kill;` cannot wipe it; the two hardcoded D:\\...\\*.rtf ODS paths are rewritten to relative ./ paths. The %frqs macro and all report/label logic are the author's, unchanged."
+}

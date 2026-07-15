@@ -1,0 +1,12 @@
+{
+  "_captured_at": "2026-07-15T15:33:00Z",
+  "_captured_run_id": "r_7b918ef8959d424e8e4b8daccf907872",
+  "status": "ok",
+  "log_contains": [
+    "NOTE: Wrote adsl_vs (7 rows, 5 columns).",
+    "NOTE: PROC REPORT output 7 observations with 5 variables.",
+    "NOTE: Read 7 rows from adsl_vs."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
